@@ -81,7 +81,7 @@
     .span_1_of_4 {
         width: 100%;
     }
-    .p-s{
+      #team .p-s{
         width:100%;
     #testimonial .col:nth-child(1),
     #testimonial .col:nth-child(2){
@@ -91,6 +91,7 @@
     #testimonial .col:nth-child(3),
     #testimonial .col:nth-child(4){
     margin-top: 5rem;
+    padding-left: 0rem;
     }
     #contact form input[type="email"]{
         width: 93%;
