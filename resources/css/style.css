@@ -1,0 +1,517 @@
+/*==============================================
+
+
+Template Name: cuda
+Template URL: https://moshiur.dev/projects/cuda/#home
+Author URL: mdmahadeking@gmail.com
+description: An Awesome Porfolio 
+Support: mdmahadeking@gmail.com
+
+
+==================================================*/
+
+/*================================================
+C S S  I N D E X
+----------------
+1. Google  Fonts
+2. Common css
+3. Reusable css
+4. header section
+5. services seciton
+6. TEAM SECTION
+7. SKILLS SECTION
+8. PORTFOLIO SECTION
+9. TESTIMONIAL SECTION 
+10. CONTACT SECTION 
+=================================================*/
+/* 1. Google  Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* 2. COMMON CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+   color: #fff;
+   background-color: #000;
+   font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+    letter-spacing: .1rem;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+h1.h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 4rem;
+}
+h4{
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+   
+}
+
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*===========
+3. Reusable css
+=============*/
+section{
+    padding: 7rem 0rem;
+}
+.row{
+   max-width: 116rem;
+   margin: auto;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    background: #0d6e5e;
+    width: 9rem;
+    margin:auto ;
+    margin-top: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+.btn:link,
+.btn:visited,
+.btn{
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: 3rem;
+    padding: 1.5rem 5rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+/*=================
+======
+ 4. header section
+ =====
+ ==================*/
+ #home{
+     width: 100%;
+     height: 87vh;
+     background:linear-gradient(rgba(144, 90, 167, 0.9),rgba(107, 62, 124, 0.9)),url(img/cuda1.jpg) no-repeat center / cover fixed;
+     position: relative;
+     overflow: hidden;
+ }
+ .logo{
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+ }
+ /* MAIN NAV===*/
+ .nav-manu{
+     float: right;
+     margin-top: 4rem;
+ }
+ .nav-manu li {
+     margin-left: 1rem;
+     display: inline-block;
+ }
+ .nav-manu li a:link,
+ .nav-manu li a:visited{
+     color: #fff;
+     font-size: 1.7rem;
+     text-transform: uppercase;
+     padding: .5rem 1.5rem;
+     border-radius: .5rem;
+    
+ }
+ .nav-manu li :first-child{
+    margin-left: 0;
+ }
+ .nav-manu li:hover a:link,
+ .nav-manu li:hover a:visited{
+     background-color: #59346b;
+     transition: .4s;
+ }
+ .active{
+     background-color:  #59346b;
+ }
+ /*STICKY MENU ====*/
+ .sticky {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: rgba(135,80,156,.9) ;
+     box-shadow:  0 .3rem .5rem rgba(255,255,255,.9);
+     z-index: 99999999;
+ }
+ .sticky .logo{
+    margin:1rem 0 ;     
+ }
+ .sticky .nav-manu{
+    margin:1.5rem 0;
+ }
+ .sticky .mobile-menu span {
+     margin-top: 0;
+ }
+ /*==moble menu==*/
+ .mobile-menu span{
+     font-size: 4rem;
+     float: right;
+     margin: 1rem  1.5rem;
+     display: none;   
+ }
+ .mobile-menu span:hover{
+     cursor: pointer;
+ }
+ .overlay {
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.842);
+     height: 100vh;
+     width: 0;
+     transition: .6s;
+     overflow-x: hidden;
+     z-index: 1;
+     margin-top: 0;
+     left: 0;
+ }
+ .closebtn{
+     font-size: 7rem;
+     right: 4rem;
+     position: absolute;
+ }
+ .mobile-container{
+    position: relative;
+    top: 15%;
+    text-align: center;
+ }
+ .mobile-container a {
+     font-size: 2.5rem ;
+     display: block;
+     margin: 2rem;
+     text-transform: uppercase;
+    letter-spacing: .3rem;
+ }
+
+ /*===HERO BOX ======*/
+ .hero-text{
+     width: 80%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+   
+ }
+ .work-btn{
+    background-color:#eb7d4b;
+    box-shadow: 0 .4rem #C86A40;
+    border-radius: .5rem;
+ }
+ /*=================
+ 5. services seciton
+ ==================*/
+ #services{
+     background: linear-gradient(rgba(23,194,164,.8),rgba(23,194,164,.8)), url(img/cuda2.jpg) no-repeat center / cover;
+     text-align: center;  
+ }
+ 
+ .p-s{
+     width: 70rem;
+     font-size: 1.9rem;
+     font-weight: 200;
+     margin: auto;
+     line-height: 3rem;
+     text-align: center;
+
+ }
+ .service-img{
+     height: 12rem;
+     margin-top: 7rem;
+     margin-bottom: 3.5rem;
+ }
+ .box p{
+     font-size: 1.7rem;
+     font-weight: 200;
+     margin-top: 2rem;
+     text-transform: capitalize;    
+ }
+ /*===================
+ 6. TEAM SECTION 
+ ====================*/
+ #team{
+    background: linear-gradient(rgba(223, 240, 237, 0.8),rgba(216, 235, 231, 0.8)), url(img/cuda3.jpg) no-repeat center / cover fixed;
+     text-align: center;
+     color: #29292e;
+ }
+ .team-box h2{
+     color: #3c4761;
+ }
+ .team-box h2::after{
+    background-color: #d0d9dd;
+ }
+
+ .team-img{
+     margin-top: 5rem;
+     margin-bottom: 3rem;
+     border-radius: 50%;
+ }
+ .role{
+     font-size: 1.6rem;
+     color: #30bae7;
+     display: inline-block;
+     margin-top: 1rem;
+ }
+ .social-link{
+    margin-top: 4rem;
+    
+ }
+ .social-link ul li{
+    display: inline-block;
+    margin: 0rem .7rem;
+ 
+   
+    
+ }
+ .social-link ul li a:link{
+   color: rgb(238, 216, 216); 
+ }
+ .social-link ul li a:link i::before{
+     background: #89b0cc;
+     width: 2rem;
+     height: 2rem;
+     border-radius: 50%;
+     display: inline-block;
+     font-size: 2rem;
+     padding: 1rem;
+     transition: .7s;
+ }
+ .social-link ul li a:hover i::before{
+     background-color: #2a3650;
+     transform: rotate(360deg);
+ }
+/*================
+7. SKILLS SECTION
+=================*/
+#skills{
+    background: linear-gradient(rgba(219, 231, 228, 0.808),rgba(206, 218, 214, 0.849)), url(img/cuda4.jpg) no-repeat center / cover;
+    color: rgb(48, 43, 43);
+}
+.skills-box h2{
+    color: #3C4761;
+}
+.skills-box h2::after{
+    background-color: #d0d9dd;
+}
+.box-skills{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.box-skills h4{
+    margin-top: 3rem;
+    font-weight: 500;
+}
+svg.radial-progress circle{
+    stroke-width: 6;
+}
+svg.radial-progress text{
+    fill: #3c4761;
+    font-size: 1.4rem;
+}
+svg.web-design circle { 
+    stroke: #30bae7; 
+}
+svg.html-css circle { 
+    stroke: #d74680; 
+}
+svg.graphics-design circle { 
+    stroke: #15c7a8; 
+}
+svg.ui-ux circle { 
+    stroke: #eb7d4b; 
+}
+/*=================
+8. PORTFOLIO SECTION
+==================*/
+
+#portfo{
+    background: linear-gradient(rgba(255, 221, 153, 0.849),rgba(255, 221, 153, 0.849)),url(img/cuda5.jpg) no-repeat center top / cover;
+    text-align: center;
+    color: rgb(39, 37, 37);
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
+.portfo-box h2{
+    color: rgb(39, 37, 37);
+}
+.portfo-box h2::after{
+    background-color: #E5C37F;
+}
+.box-portfo, h4{
+    margin-top: 3rem;
+}
+.portfo-filter{
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+
+}
+.portfo-filter button{
+    background-color: #DABC81;
+    font-size: 1.8rem;
+    padding: 1rem 1.8rem;
+    margin: 0 .5rem;
+    border-radius: .5rem;
+    border: 0;
+    transition: .5s;
+}
+.portfo-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .5rem rgba(60,71,97,.5);
+}
+.portfo-filter .mixitup-control-active{
+    background: #fff;
+}
+/*=====================
+9. TESTIMONIAL SECTION 
+======================*/
+#testimonial {
+    background: linear-gradient(rgba(215,70,128,.9),rgba(215,70,128,.9)),url(img/testimonial-bg.jpg) no-repeat center top / cover;
+    
+    color:#fff;
+}
+#testimonial .p-s{
+    color: #fff;
+}
+#testimonial h2::after{
+    background-color: #fff;
+}
+#testimonial .col:nth-child(1),
+#testimonial .col:nth-child(2){
+    margin-top: 5rem;
+    padding-left: 5rem;
+}
+#testimonial .col:nth-child(3),
+#testimonial .col:nth-child(4){
+    margin-top: 10rem;
+    padding-left: 5rem;
+}
+
+.cphoto{
+    width: 10rem;
+    float: left;
+}
+.cphoto img{
+    height: 8rem;
+    border-radius: 50%;  
+    margin-bottom: 3rem;
+}
+.creview{
+    width: 35rem;
+    float: left;
+}
+.creview q{  
+    font-size: 2.1rem;
+    font-style: italic;  
+}
+.creview .role {
+    font-size: 1.8rem;
+    color: #ffdd99;
+}
+/*================
+10. CONTACT SECTION 
+==================*/
+#contact{
+    background: linear-gradient(rgba(60,84,153,.9),rgba(60,84,153,.9)),url(img/cuda8.jpg) no-repeat center / cover fixed;
+    text-align: center;
+}
+#contact h2::after{
+    background-color: #273a71;
+}
+#contact .p-s{
+    font-size: 1.8rem;
+}
+#contact form {
+   margin-top: 6rem;
+   width: 70%;
+   margin-left: 15%;
+}
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea{
+    background-color: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    padding: 1rem ;
+    margin: .3rem;
+    border-radius: .5rem;
+    color: #d0d9dd;
+    font-size: 1.8rem;
+}
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: #fff;
+    opacity: .5;
+    font-size: 1.7rem;  
+}
+.btn_submit {
+    border: 0;
+   border-bottom: .5rem solid #299ec5;
+   background: #30bae7;
+   margin-top: 5rem;
+   padding: 1rem 3rem;
+   font-size: 1.7rem;
+   text-transform: uppercase;
+   color: #fff;
+   font-weight: 400;
+   border-radius: .3rem;
+   cursor: pointer;
+}
+/*================
+11.footer SECTION 
+==================*/
+#footer {
+    background-color: #344b8e;
+    text-align: center;
+    border-top: .1rem solid rgba(255, 255, 255, 0.308);
+}
+#footer ul li {
+    margin: 0 1.5rem;
+
+}
+#footer ul li  a{
+    font-size: 2.3rem;
+    text-transform: capitalize;
+}
+#footer ul li  a:hover {
+    color: rgb(0, 153, 255);
+    transition: .5s;
+}
