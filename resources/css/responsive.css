@@ -81,6 +81,8 @@
     .span_1_of_4 {
         width: 100%;
     }
+    .p-s{
+        width:100%;
     #testimonial .col:nth-child(1),
     #testimonial .col:nth-child(2){
     margin-top: 5rem;
